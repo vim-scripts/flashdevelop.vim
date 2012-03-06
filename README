@@ -1,0 +1,27 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3961
+
+Check for updates on Github: https://github.com/endel/flashdevelop.vim
+
+This plugin aims to provide productive features for editing ActionScript 3.0 files inside your VIM. 
+
+It\\&#039s actually on early development stage, but you can try it and improve it if you feel adventurous.
+
+Requirements
+VIM with ruby bindings. (+ruby)
+sprout gem (gem install sprout)
+vim-rooter plugin
+Custom ctags configuration, as described above.
+ctags
+flashdevelop.vim requires a custom ctags configuration for ActionScript files.
+
+Copy the contents of support/ctags into your ~/.ctags
+
+Features currently avaible
+Compilation through project-sprouts. (:make)
+Keyboard bindings
+
+Leader + N - Create a new class
+Leader + R - Swap between implementation and test classes.
+Leader + m - Autocomplete
+If cursor inside a class name:
+Create a class if it\\&#039s name isn\\&#039t defined, otherwise, try to import it.
